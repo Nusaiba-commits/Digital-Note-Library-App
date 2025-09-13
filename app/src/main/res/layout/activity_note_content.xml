@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_primary"
+    tools:context=".NoteContentActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@color/my_secondary"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end">
+
+
+            <ImageButton
+                android:id="@+id/save_note_btn"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/grey"
+                android:src="@drawable/baseline_done_24" />
+
+            <ImageButton
+                android:id="@+id/delete_note_btn"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/save_note_btn"
+                android:layout_toStartOf="@id/eraser_btn"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/grey"
+                android:src="@drawable/baseline_delete_outline_24" />
+
+
+            <ImageButton
+                android:id="@+id/upload_note_btn"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toStartOf="@id/delete_note_btn"
+                android:layout_below="@id/save_note_btn"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/grey"
+                android:src="@drawable/baseline_file_upload_24" />
+
+            <ImageButton
+                android:id="@+id/draw_black_colour"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="19dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toStartOf="@id/save_note_btn"
+                android:layout_above="@+id/undo_btn"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/black" />
+
+            <ImageButton
+                android:id="@+id/draw_green_colour"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toStartOf="@id/draw_black_colour"
+                android:layout_above="@id/undo_btn"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/my_primary" />
+
+            <ImageButton
+                android:id="@+id/draw_red_colour"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                android:layout_toStartOf="@+id/draw_green_colour"
+                android:layout_above="@id/undo_btn"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/red" />
+
+            <ImageButton
+                android:id="@+id/undo_btn"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/save_note_btn"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/grey"
+                android:src="@drawable/baseline_undo" />
+
+            <ImageButton
+                android:id="@+id/eraser_btn"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/save_note_btn"
+                android:layout_toStartOf="@id/undo_btn"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/grey"
+                android:src="@drawable/baseline_eraser" />
+
+        </RelativeLayout>
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
+        android:backgroundTint="@color/marble"
+        android:background="@drawable/screen_border"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:id="@+id/note_title">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/note_title_txt"
+            android:hint="Note Title"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="casual"
+            android:textColor="@color/black">
+        </EditText>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/note_title">
+
+    <LinearLayout
+        android:id="@+id/note_content_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="546dp"
+        android:layout_below="@+id/note_title"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/screen_border"
+        android:backgroundTint="@color/marble"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/note_content_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="150dp"
+            android:fontFamily="casual"
+            android:gravity="top"
+            android:hint="Write your note here . . . Draw below the line . . . "
+            android:minLines="5"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/doodle_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:textStyle="bold|italic"
+            android:minHeight="50dp"
+            android:text="Doodle Space"
+            android:textAlignment="center"
+            android:textColor="@color/grey"
+            android:textSize="25sp" />
+
+        <com.example.thedigitalnotelibrary.DrawView
+            android:id="@+id/draw_note_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="300dp" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

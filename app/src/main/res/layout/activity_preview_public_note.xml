@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_primary"
+    tools:context=".PreviewPublicNoteActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/toolbar"
+        android:background="@color/my_secondary"
+        >
+
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:layout_margin="15dp"
+            android:src="@drawable/baseline_download_24"
+            android:backgroundTint="@color/grey"
+            android:background="@drawable/rounded_corner"
+            android:id="@+id/download_note_btn" >
+
+        </ImageButton>
+
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:layout_margin="15dp"
+            android:src="@drawable/baseline_delete_outline_24"
+            android:backgroundTint="@color/grey"
+            android:background="@drawable/rounded_corner"
+            android:id="@+id/delete_public_note_btn" >
+        </ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/aleo_bold"
+            android:text="Preview Note"
+            android:padding="15dp"
+            android:textAlignment="center"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:id="@+id/preview_note_text" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
+        android:backgroundTint="@color/marble"
+        android:background="@drawable/screen_border"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:id="@+id/public_note_title">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/public_note_title_txt"
+            android:hint="Note Title"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="@font/aleo_bold"
+            android:textColor="@color/black">
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/public_note_title"
+        android:orientation="vertical"
+        android:backgroundTint="@color/marble"
+        android:background="@drawable/screen_border"
+        android:layout_marginHorizontal="16dp"
+        android:padding="16dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/public_note_content_txt"
+            android:hint="Write your note here . . .  "
+            android:gravity="top"
+            android:minLines="15"
+            android:textSize="20sp"
+            android:fontFamily="@font/aleo"
+            android:textColor="@color/black">
+        </EditText>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="19dp"
+    app:cardElevation="4dp"
+    android:background="@color/my_primary"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        android:backgroundTint="@color/my_primary"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/public_note_title_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:gravity="center"
+            android:text="note title"
+            android:fontFamily="@font/aleo_bold"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/public_note_content_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/aleo"
+            android:textColor="@color/white"
+            android:text="this can be note content that can be long"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:id="@+id/public_note_subject_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="11dp"
+            android:gravity="start"
+            android:text="Subject"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/public_note_author_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/public_note_year_text_view"
+                android:paddingLeft="11dp"
+                android:layout_marginBottom="3dp"
+                android:gravity="start"
+                android:text="Author"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/public_note_downloads_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/public_note_author_text_view"
+                android:paddingLeft="11dp"
+                android:gravity="start"
+                android:text="Downloads"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/public_note_year_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/public_note_subject_text_view"
+            android:layout_marginVertical="4dp"
+            android:gravity="start"
+            android:paddingLeft="11dp"
+            android:text="Year"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/public_note_timestamp_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:gravity="left"
+            android:paddingLeft="11dp"
+            android:textColor="@color/white"
+            android:text="Date uploaded: "
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

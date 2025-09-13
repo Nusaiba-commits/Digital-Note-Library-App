@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/my_secondary">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/screen_border">
+
+
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="5dp"
+            android:layout_marginStart="24dp"
+            android:id="@+id/admin_user_options_icon"
+            android:src="@drawable/baseline_admin_panel_settings_24"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="25dp"
+            android:id="@+id/admin_users_options"
+            android:layout_below="@id/admin_user_options_icon"
+            >
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Delete User"
+                android:fontFamily="@font/aleo_bold"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:id="@+id/admin_users_delete_btn"
+                android:layout_gravity="center"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Change Password"
+                android:padding="25dp"
+                android:fontFamily="@font/aleo_bold"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:id="@+id/admin_users_change_password_btn"
+                android:layout_gravity="center"
+                />
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

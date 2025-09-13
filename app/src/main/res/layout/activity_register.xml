@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisActivity"
+    android:background="@drawable/screen_border">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="5dp"
+        android:layout_marginStart="24dp"
+        android:id="@+id/register_icon"
+        android:src="@drawable/baseline_playlist_add_check_24"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_icon"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="cursive"
+        android:text="Let's start. Register."
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:id="@+id/get_started_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/get_started_text"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:id="@+id/user_details">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="25dp"
+            android:hint="User Name"
+            android:fontFamily="@font/aleo_bold"
+            android:textColorHint="@color/black"
+            android:textSize="25sp"
+            android:background="@drawable/rounded_corner"
+            android:id="@+id/user_name_edit_text"
+            android:inputType="textEmailAddress"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="25dp"
+            android:hint="Email Id"
+            android:fontFamily="@font/aleo_bold"
+            android:textColorHint="@color/black"
+            android:textSize="25sp"
+            android:background="@drawable/rounded_corner"
+            android:id="@+id/email_edit_text"
+            android:inputType="textEmailAddress"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="25dp"
+            android:hint="Password"
+            android:fontFamily="@font/aleo_bold"
+            android:textColorHint="@color/black"
+            android:textSize="25sp"
+            android:background="@drawable/rounded_corner"
+            android:id="@+id/password_edit_text"
+            android:inputType="textPassword"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="25dp"
+            android:hint="Confirm Password"
+            android:fontFamily="@font/aleo_bold"
+            android:textColorHint="@color/black"
+            android:textSize="25sp"
+            android:background="@drawable/rounded_corner"
+            android:id="@+id/confirm_password_edit_text"
+            android:inputType="textPassword"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="30mm"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:id="@+id/submit_btn"
+            />
+
+        <ProgressBar
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:outlineAmbientShadowColor="@color/my_primary"
+            android:outlineSpotShadowColor="@color/my_primary"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:id="@+id/progress_bar"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_details"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/login_textview">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aleo"
+            android:text="Already Registered?  "
+            android:textSize="25sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/login_text_view_btn"
+            android:text=" Login"
+            android:fontFamily="@font/aleo_bold"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_textview"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aleo"
+            android:text="Admin? "
+            android:textSize="25sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/admin_click_here_btn"
+            android:text=" Click here"
+            android:fontFamily="@font/aleo_bold"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
