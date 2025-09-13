@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "264265366597",
+    "project_id": "thedigitalnotelibrary-4da84",
+    "storage_bucket": "thedigitalnotelibrary-4da84.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264265366597:android:3cd0d1254f043dc278772c",
+        "android_client_info": {
+          "package_name": "com.example.thedigitalnotelibrary"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxjW5JyZnJM7cdsZSkYLnFHuCLSb4t-yc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

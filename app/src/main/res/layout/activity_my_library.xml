@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/my_library_toolbar"
+        android:background="@color/my_primary">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp">
+
+            <EditText
+                android:id="@+id/my_library_search_bar"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/search_bar"
+                android:fontFamily="casual"
+                android:hint="Search note titles"
+                android:padding="15dp"
+                android:textColorHint="@color/white"
+                android:textStyle="bold" />
+
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/baseline_manage_search_24"
+                android:contentDescription="Search"
+                android:id="@+id/my_library_search_button"/>
+
+
+<!--            <androidx.appcompat.widget.SearchView-->
+<!--                android:id="@+id/my_library_search_view"-->
+<!--                android:accessibilityPaneTitle="Search"-->
+<!--                app:searchIcon="@drawable/baseline_manage_search_24"-->
+<!--                app:showAsAction="ifRoom|collapseActionView"-->
+<!--                app:actionViewClass="androidx.appcompat.widget.SearchView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="45dp" />-->
+
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/my_library_menu_btn"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:backgroundTint="@color/grey"-->
+<!--                android:src="@drawable/baseline_menu_24" />-->
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_below="@+id/my_library_toolbar"
+        android:id="@+id/my_library_recycler_view">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/my_library_add_note_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/my_secondary"
+        android:contentDescription="Add New Note"
+        android:src="@drawable/baseline_add_24">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</RelativeLayout>

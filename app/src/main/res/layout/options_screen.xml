@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/options_super_parent_layout"
+    android:gravity="center"
+    android:background="@color/my_secondary">
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/screen_border">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/library_icon"
+        android:fontFamily="cursive"
+        android:text="Welcome to Your Library"
+        android:layout_marginBottom="35dp"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:id="@+id/options_screen_welcome_text" />
+
+
+    <ImageView
+        android:layout_width="15mm"
+        android:layout_height="15mm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="5dp"
+        android:layout_marginLeft="24dp"
+        android:id="@+id/library_icon"
+        android:src="@drawable/baseline_account_balance_24"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:id="@+id/options"
+        android:layout_below="@id/library_icon"
+>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="My Library"
+        android:fontFamily="@font/aleo_bold"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:id="@+id/myLibrary_btn"
+        android:layout_gravity="center"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Public Library"
+        android:fontFamily="@font/aleo_bold"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:id="@+id/publicLibrary_btn"
+        android:layout_gravity="center"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Log out"
+        android:fontFamily="@font/aleo_bold"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:id="@+id/logout_btn"
+        android:layout_gravity="center"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:paddingStart="70dp"
+            android:paddingEnd="70dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aleo"
+                android:text="Admin?  "
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/my_library_options_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aleo_bold"
+                android:text=" Tap Here"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</RelativeLayout>

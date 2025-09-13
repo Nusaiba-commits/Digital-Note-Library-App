@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="my_primary">#429745</color>
+    <color name="my_secondary">#8BC34A</color>
+    <color name="light_green">#587558</color>
+    <color name="green_leaf">#B7E1A3</color>
+    <color name="marble">#E6E4D8</color>
+    <color name="grey">#4F514C</color>
+    <color name="blue">#3F51B5</color>
+    <color name="red">#F44336</color>
+    <color name="beige">#D6BA65</color>
+</resources>
+
+
+
+
+

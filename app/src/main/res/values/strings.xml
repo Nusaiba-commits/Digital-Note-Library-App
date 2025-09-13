@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">The Digital Note Library</string>
+    <string name="disclaimer">"Disclaimer: I declare that this note was written by me and is not copied from somewhere else. \nI know that not following this disclaimer can cause my account to be deleted permanently and even cost me a fine. "</string>
+</resources>
